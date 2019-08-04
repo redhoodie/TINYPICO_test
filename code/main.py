@@ -48,7 +48,7 @@ def do_things():
 
         # Connect / Maintain internet connection.
         do_connect(config)
-        time.sleep_us(50)
+        time.sleep_us(100)
 
 import _thread
 import time

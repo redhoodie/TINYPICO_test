@@ -80,7 +80,7 @@ def serve(reader, writer):
 
 def start():
     import logging
-    logging.basicConfig(level=logging.ERROR)
+    #logging.basicConfig(level=logging.ERROR)
 
     loop = asyncio.get_event_loop()
     loop.call_soon(asyncio.start_server(serve, "0.0.0.0", 80, 20))

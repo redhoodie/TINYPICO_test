@@ -55,9 +55,9 @@ webrepl.start()
 
 settime()
 
-from rtttl_player import play_song
+# from rtttl_player import play_song
+
+gc.collect()
 
 from webserver import start_in_thread
 start_in_thread()
-
-gc.collect()

@@ -74,12 +74,13 @@ def serve(reader, writer):
         else:
             yield from writer.awrite("HTTP/1.0 404 NA\r\n\r\n")
     except:
-        raise
+        #raise
+        pass
     finally:
         yield from writer.aclose()
 
 def start():
-    import logging
+    #import logging
     #logging.basicConfig(level=logging.ERROR)
 
     loop = asyncio.get_event_loop()
